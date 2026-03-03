@@ -10,8 +10,8 @@ gcc -o z1.c -lm
 
 ## Использование
 ```bash
-./generator              # ручной ввод
-./generator config.txt   # из файла
+./z1               # ручной ввод
+./z1 config.txt   # из файла
 ```
 
 ## Параметры
