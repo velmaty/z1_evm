@@ -205,6 +205,7 @@ int main(int argc, char *argv[]) {
             fprintf(task_file, "# Вариант %d\n\n", var);
             fprintf(task_file, "## Перевести числа в машинное представление\n\n");
             fprintf(task_file, "| N | Число |\n");
+            fprintf(task_file, "|--|-------|\n");
             for (int i=0; i<k; i++) {
                 char num_str[50];
                 format_double(num_str, numbers[i], p);
@@ -220,7 +221,8 @@ int main(int argc, char *argv[]) {
             fprintf(check_file, "# Вариант %d (ответы)\n\n", var);
             fprintf(check_file, "## Проверка перевода\n\n");
             fprintf(check_file, "| N | Число | Машинное представление (биты) | Ошибка |\n");
-            
+            fprintf(check_file, "|---|-------|-------------------------------|--------|\n");
+           
             for (int i=0; i<k; i++) {
                 char num_str[50];
                 char bits_str[100]="";
