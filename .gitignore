@@ -1,0 +1,6 @@
+*.o
+*.exe
+generator
+задание/
+проверка/
+.DS_Store
